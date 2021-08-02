@@ -1,0 +1,1009 @@
+
+html,body{
+    /*background-color: #C0DEED;*/
+    /*background-color: #D7EAF4*/
+}
+
+#page {
+    padding: 60px 30px 30px 30px;
+    background: white;
+/*    -moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;*/
+/*      -moz-box-shadow:    0px 0px 5px 6px #CAE3F0;
+  -webkit-box-shadow: 0px 0px 5px 6px #CAE3F0;
+  box-shadow:         0px 0px 5px 6px #CAE3F0;*/
+}
+
+#footer{
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px #D7EAF4 solid;
+}
+
+.saveItemButton{
+    float: right;
+}
+
+#loginWrapper{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginWrapper .row input[type="text"],
+#loginWrapper .row input[type="password"],
+#loginWrapper .row label,
+#loginWrapper .submit button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+#loginWrapper .rememberMe label{
+    display: inline-block;
+}
+
+.dataGrid th.label{
+    margin-right: 35px;
+}
+
+.sortableWrapper tr{
+    
+}
+
+.sortableWrapper tr td{
+    padding: 10px 20px;
+    height: 20px;
+}
+.sortableWrapper tr td.imgDnD{
+    padding: 4px;
+    
+}
+
+
+.sortableWrapper tr td.number,.sortableWrapper tbody tr td:first-child{
+    height: 20px;
+    padding: 0px;
+    background: black;
+    color: white;
+    text-align: center;
+    border: 2px solid #F5F5F5;
+    
+    -webkit-border-radius: 10px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 10px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 10px; 
+  font-weight: bold;
+}
+
+
+.form .row{
+    margin-left: 0px !important;
+}
+
+.errorSummary,.error{
+    background: #FEE;
+    border: 1px solid red;
+    margin: 10px 0px;
+    padding: 10px 15px;
+}
+
+.error.required,.errorMessage, .errorSummary ul li{
+    color: red;
+    font-weight: bold;
+    background: transparent;
+    border: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.yiiLog{
+    margin-top: 50%;
+}
+
+
+.treeview li{
+    line-height: normal;
+}
+
+.treeview li a{
+    padding-left: 3px;
+}
+
+label{
+    font-weight: bold;
+}
+
+form .well input[type="text"]{
+width: auto;
+min-width: 200px;
+}
+
+.editFolder,.uploadFolder,.deleteFolder{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("img/glyphicons-halflings.png");
+    background-position: 0px -72px;
+    background-repeat: no-repeat;
+}
+
+.uploadFolder{
+    background-position: -142px -24px;
+}
+
+.deleteFolder{
+    background-position: -454px 0px;
+    background-color: transparent;
+    border: 0px;
+    width: 16px !important;
+}
+
+
+/*
+.folders ul:last-child li:hover > span.hidden{
+    display: inline-block;
+    visibility: visible;
+}*/
+
+
+/*files manager*/
+
+
+#filesWrapper {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  z-index: 100;
+  background: white;
+  padding: 5px;
+}
+
+#filesWrapper *{
+  z-index: 200;
+}
+
+.fileStaticManager .fileAdminItem img{
+  z-index: 100;
+}
+
+
+
+#filesHandler{
+  height: 20px;
+/*    position: absolute;
+  top: 0px;
+  left: 0px;*/
+  margin-bottom: 5px;
+  background-color: #EFEFEF;
+  cursor: move;
+}
+
+#filesClose{
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: black;
+  color: #EFEFEF;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+#filesInnerWrapper{
+  position: relative;
+  height: 400px;
+}
+
+#foldersTree, #folderFiles, #fileQueue{
+  height: 375px;
+/*  overflow: auto;
+  overflow-y: auto;*/
+  overflow-x: hidden;
+}
+
+#fileQueue{
+  height: auto;
+  max-height: 345px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+#foldersTree ul{
+  margin: 0px 10px;
+  padding: 0px;
+}
+
+#foldersTree > ul > li{
+/*  display: inline;*/
+}
+
+#foldersTree li:hover > ul > li{
+/*  display: inline;*/
+}
+
+#foldersTree li{
+/*  display: none;*/
+}
+
+ 
+/*li:hover > */
+#foldersTree span.hidden{
+  display: none;
+}
+
+#foldersTree{
+  float: left;
+  display: block;
+  width: 27%;
+  /*height: 100%;*/
+
+}
+
+
+
+#folderFiles{
+  float: left;
+  display: block;
+  width: 40%;
+}
+
+#uploadWrapper{
+  float: left;
+  display: block;
+  width: 33%;
+  height: 100%;
+}
+
+#lunchUpload{
+
+  background: none repeat scroll 0 0 #494949;
+    color: white;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 125px;
+    margin-top: -33px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    cursor: pointer;
+/*
+  background: #494949;
+  color: white;
+  display: block;
+  margin-top: 2px;
+  text-align: center;
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  width: 120px;*/
+}
+
+.rounded-3corners {
+     -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+#filesList{
+  margin: 0px;
+  padding: 0px;
+}
+
+#filesList > div{
+  width: 85px;
+  height: 100px;
+  float: left;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+#filesList > div.sortableWrapper{
+    float: none;
+    height: auto;
+    width: auto;
+}
+
+#filesList > div.sortableWrapper tbody img{
+    max-height: 100px;
+}
+
+
+.thumbs .fileAdminItem{
+  display: block;
+  position: relative;
+  padding: 2px;
+  width: 80px;
+  height: 95px;
+  border: 1px solid #EFF4FA;
+}
+
+.fileAdminItem img{
+/*  position: absolute;
+  top: 0px;
+  left: 0px;*/
+  max-width: 80px;
+  max-height: 80px;
+  z-index: 2000;
+}
+
+
+
+.thumbs .fileAdminItem span.name{
+  display: block;
+  font-size: 10px;
+  height: 15px;
+  position: absolute;
+  bottom: 0px;
+  width: 80px;
+  overflow: hidden;
+}
+
+.fileStaticManager .thumbs .fileAdminItem .fileMenu{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2001;
+}
+
+.fileStaticManager .fileAdminItem .fileMenu a{
+    display: block;
+    width:18px;
+    height: 18px;
+    float: left;
+    margin: 4px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url("img/glyphicons-halflings.png");
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.fileStaticManager .fileAdminItem .fileMenu a.deleteFile{
+    background-position: -454px 1px;
+}
+
+.fileStaticManager .fileAdminItem .fileMenu a.editFile{
+    background-position: 2px -71px;
+    
+}
+
+.list table{
+    width: 100%;
+}
+
+.list table thead{
+    font-weight: bold;
+    background: white;
+}
+
+.list table tbody tr:nth-child(even){
+    background: white;
+    color: rgb(230,230,230);
+}
+#filesManagerWrapper .list table tbody tr:nth-child(even) a
+,.list table tbody tr:nth-child(even) a{
+    color: rgb(230,230,230);
+}
+
+
+
+.list table tbody tr:nth-child(odd) a{
+    color: white;
+}
+.list table tbody tr:nth-child(odd){
+    background: rgb(230,230,230);
+    color: white;
+}
+
+table tbody tr:hover,
+.table-striped tbody > tr:nth-child(odd):hover > td{
+    background: #ff0;
+    color:black;
+}
+
+.list table tbody tr:hover{
+    background: #CAE3F0;
+    color:black;
+}
+
+#filesManagerWrapper .list table tbody tr:hover a,
+.list table tbody tr:hover a{
+    color:black;
+}
+
+
+.fontsize.rounded-3.el-select{
+  width: 50px !important;
+  height: 15px !important;
+}
+
+
+.fileStaticManager li:hover .hidden{
+  display: inline;
+}
+
+.fileStaticManager li:hover .hidden .uploadFolder{
+  display: none;
+}
+
+#selectedFileQueue{
+  max-height: 300px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  overflow: auto;
+}
+
+#selectedFileQueue img{
+  max-height: 70px;
+}
+
+
+/*files manager*/
+
+#filesManagerBgWrapper{
+    width: 100%;
+    background: rgb(100,100,100);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 10000px;
+    opacity: 0.95;
+    z-index: 10000;
+}
+
+#filesManagerWrapper{
+    position: relative;
+    top: 5px;
+    width: 888px;
+    right: -50%;
+    z-index: 10004;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#filesManagerWrapper .treeview ul{
+    background: transparent;
+}
+
+#filesManagerWrapper .treeview{
+    margin-bottom: 200px;
+}
+
+#filesManagerWrapper .treeview a{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#closeFileManager{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url('img/cancel.png') center center no-repeat;
+    cursor: pointer;
+}
+
+.folderControlsWrapper{
+    text-align: right;
+}
+
+#filesManagerWrapper .folderControlsWrapper{
+    color: white;
+}
+
+.folderControlsWrapper .control{
+    cursor: pointer;
+}
+
+.folderControlsWrapper .control.current{
+    text-decoration: underline;
+}
+
+.folderViewWrapper.list .thumbs{
+    display: none;
+}
+
+.folderViewWrapper.thumbs .list{
+    display: none;
+}
+
+
+#filesManagerWrapper .fileAdminItem:hover a{
+    color:black;
+}
+
+#filesManagerWrapper table tr td:last-child{
+    display: none !important;
+}
+
+#filesManagerWrapper .sortableWrapper table tr td:last-child{
+    display: table-cell !important;
+}
+
+
+
+
+/*
+#filesManagerWrapper .table-striped tbody > tr:nth-child(odd) > td,
+#filesManagerWrapper .table-striped tbody > tr:nth-child(odd) > th{
+    background: transparent;
+}*/
+
+
+#filesButton{
+   background-image: url("img/glyphicons-halflings.png");
+   height: 30px;
+   margin-top: 3px;
+   background-position: 10px -135px;
+   background-repeat: no-repeat; 
+   width:25px;
+}
+
+#filesButton a{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.fileUploaderPanel .row{
+    margin-left: 0px;
+}
+
+.fileUploaderPanel .row.fileupload-buttonbar{
+    background: white;
+    padding-top: 10px;
+}
+
+.fileUploaderPanel .row.fileupload-buttonbar .span7{
+    position: relative;
+    z-index: 1;
+}
+
+
+.fileUploaderPanel .fileupload-buttonbar h1{
+    position: absolute;
+    text-align: center;
+    opacity: 0.5;
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+.fileUploaderPanel tbody.files{
+    background: white;
+}
+
+
+
+.fileUploaderPanel .row.fileupload-buttonbar{
+    min-height: 70px;
+}
+
+.selectedFolder{
+    text-decoration: underline
+}
+
+
+#filesManagerWrapper .left_column,
+.fileStaticManager.left_column,
+#filesManagerWrapper .right_column,
+.fileStaticManager.right_column{
+    width: 30%;
+    float: left;
+}
+#filesManagerWrapper .right_column,.fileStaticManager.right_column{
+    width: 65%;
+    margin-left: 4%;
+}
+
+.folderName{
+    color: white;
+    margin-top: 0px;
+}
+
+.fileStaticManager .folderName{
+    color: #494949;
+}
+
+.thumbs .fileAdminItem{
+    float: left;
+    margin-bottom: 7px;
+    margin-right: 7px
+}
+
+
+.ui-tooltip{
+    z-index: 10004;
+    max-width: none;
+}
+
+#filesManagerWrapper a{
+    color:white;
+}
+
+.file_input{
+    background: transparent;
+    border: 0px;
+    display: none !important;
+}
+
+.file_selector_wrapper.well{
+    background: white;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+
+.img_selector_button,
+.doc_selector_button,
+.imgs_selector_button,
+.docs_selector_button{
+    cursor: pointer;
+    display: block;
+}
+
+.img_preview img,.imgs_preview img{
+    max-height: 150px;
+    max-width: 150px;
+}
+
+#filesPreviewPanelWrapper{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: rgb(50,50,50);
+    bottom: 0px;
+    left: 0px;
+    z-index: 10010;
+}
+
+.filesPreviewButtonsWrapper{
+    float: left;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.previewFilesWrapper{
+    height: 100px;
+    max-width: 80%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.row .previewFilesWrapper{
+    width: 100%;
+    max-width: none;
+}
+
+.row .previewFilesWrapper .files{
+    margin-left: 15px;
+}
+
+.files{
+    width:10000000px
+}
+
+.previewFilesWrapper .files li{
+    float: left;
+    max-width: 80px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 80px;
+    position: relative;
+}
+
+.previewFilesWrapper .files li{
+    float: left;
+    max-width: 80px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 80px;
+    position: relative;
+}
+
+.previewFilesWrapper .files li .removeFileFromQueue{
+     display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("img/glyphicons-halflings.png");
+    background-position: -310px 2px;
+    background-color: white;
+    border: 0px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.previewFilesWrapper .files img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.filesPreviewButtonsWrapper > strong{
+    display: block;
+    padding:5px;
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.clear_file_button,.edit_file_button,.order_file_button{
+    display: block;
+    width:16px;
+    height: 16px;
+    background-image: url("img/glyphicons-halflings.png");
+    background-repeat: no-repeat;
+    background-position: -308px 6px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 0px;
+    position: relative;
+    z-index: 100;
+    float: left;
+}
+
+.edit_file_button{
+    margin-left: 4px;
+    background-position: 5px -66px;
+    background-image: url("img/glyphicons-halflings.png"); 
+}
+
+.order_file_button{
+    margin-left: 4px;
+    background-image: url("img/glyphicons-halflings.png"); 
+    background-position: -213px -114px;
+}
+
+.checkboxListRow{
+    margin-bottom: 7px;
+}
+.checkboxListRow label{
+    display: inline;
+}
+
+.span3,
+  .span9,
+  .container{
+      width: auto !important;
+    box-sizing: border-box;
+    -moz-border-box: border-box;
+    -webkit-border-box: border-box;
+      float: none !important;
+  }
+
+
+
+/*responsive*/
+
+@-ms-viewport {
+  width: device-width;
+}
+
+
+
+@media (min-width: 1200px) {
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container,
+  #filesManagerWrapper
+  {
+    width: auto;
+    box-sizing: border-box;
+    -moz-border-box: border-box;
+    -webkit-border-box: border-box;
+  }
+  
+  #filesManagerWrapper{
+      min-width: 900px;
+  }
+  
+  .navbar-fixed-top .container{
+    width: 100%;
+    box-sizing: border-box;
+    -moz-border-box: border-box;
+    -webkit-border-box: border-box;
+  }
+  
+  
+  
+  .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
+      padding: 0px 15px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container,
+  #filesManagerWrapper
+  {
+    width: 724px;
+  }
+  
+  .navbar-fixed-top .container{
+    width: 755px;  
+  }
+}
+
+@media (max-width: 767px) {
+    #filesManagerWrapper,
+    .container {
+        width: auto;
+    }
+}
+
+/*responsive*/
+
+
+#selectedCityLabel a{
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.buttons .btn{
+    margin-left: 10px;
+}
+
+.navbar .nav > li.divider > a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar .brand{
+    padding: 10px 5px;
+    margin-left: 5px;
+}
+
+.navbar .nav > li > a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#confirmOrder{
+    color: black;
+font-weight: bold;
+width: 100px;
+display: block;
+cursor: pointer !important;
+}
+
+.column-1-2{
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+}
+
+.row .checkboxList {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.row .checkboxList li{
+    line-height: 30px;
+    height: 30px;
+}
+
+.row .checkboxList li label,
+.row .checkboxList li input[type="radio"],
+.row .checkboxList li input[type="checkbox"]{ 
+    display: inline-block;
+    margin: 0px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+#lean_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.padding-box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;   
+  box-sizing: border-box; 
+}
+
+.treeview ul{
+    margin-top: 0px;
+    background: transparent;
+}
+
+.ui-datepicker{
+    z-index: 101 !important;
+}
+
+.sortable, .sortable ul{
+    list-style: none;
+}
+
+.sortable li > div{
+    background: white;
+    display: inline-block;
+    margin: 3px;
+    padding: 4px 10px;
+    cursor: move;
+     -webkit-border-radius: 4px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 4px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 4px; 
+    
+}
+
+.grid-view{
+    padding-top: 0px;
+}
+
+.catalogTreeWrapper.closed .treeWrapper{
+    display: none;
+}
+
+.catalogTreeWrapper h3{
+    cursor: pointer;
+}
+
+.catalogTreeWrapper.closed h3:after{
+    content: ' +';
+    
+}
+
+.catalogTreeWrapper h3:after{
+    content: ' -';
+}
+
+
+.yiiTab ul.tabs{
+    padding: 0px;
+}

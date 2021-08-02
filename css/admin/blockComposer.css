@@ -1,0 +1,182 @@
+#blocksModalButton,#previewButton{
+    float: right;
+    margin-left: 10px;
+}
+
+.textBlocksWrapepr.column, .resultWrapper.column{
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+}
+
+.blockWrapper,.blockResultWrapper{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    position: relative;
+    min-height: 30px;
+}
+
+.blockWrapper:hover,.blockResultWrapper:hover{
+    background: white;
+    color: black;
+}
+
+.blockWrapper .control{
+    display: none;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    right: 5px; 
+    background-color: #EFEFEF;
+    background-repeat: no-repeat;
+    background-image: url("img/glyphicons-halflings.png");
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.blockResultWrapper .control{
+    display: none;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+    background-color: #EFEFEF;
+    background-repeat: no-repeat;
+    background-image: url("img/glyphicons-halflings.png");
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    float: right;
+}
+
+.blockWrapper .control:hover,
+.blockResultWrapper .control:hover{
+    background-color:#e3e3e3;
+    border: 1px solid black;
+}
+
+.blockResultWrapper .controls{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    min-width: 150px;
+}
+
+.blocksWrapper .blockWrapper:hover .control,
+.blockResultWrapper:hover .control{
+    display: block;
+    
+}
+
+.blockWrapper .control.addButton{
+    background-position: -405px -94px;
+}
+
+.blockResultWrapper .removeButton{
+    background-position: -430px -94px;
+}
+
+.blockResultWrapper .upButton{
+    background-position: -286px -94px;
+}
+
+.blockResultWrapper .downButton{
+    background-position: -308px -94px;
+}
+
+.blockWrapper.hidden{
+    display: none;
+}
+
+.blockText img,
+.blockResultWrapper img{
+    background-size: cover;
+    height: 200px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+
+.blocksWrapper{
+    background: #e3e3e3;
+    padding: 10px;
+    
+    position: relative;
+    padding-top: 100px;
+}
+
+.filterWrapper{
+    background: white;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    height: 80px;
+    top: 0px;
+}
+
+.blocks{
+    overflow: auto;
+    width: 100%;
+}
+
+.modal_close{
+    float: right;
+    text-decoration: none !important;
+    height: 14px;
+    width: 14px;
+    background-image: url("img/glyphicons-halflings.png");
+    background-position: -312px 0px;
+    background-repeat: no-repeat;
+}
+
+.media img.main,
+.blockResultWrapper img.main{
+    float: left;
+    width: 25%;
+}
+
+.media .minorWrapper,
+.blockResultWrapper .minorWrapper{
+    float: right;
+    width: 75%;
+    padding-left: 10px; 
+}
+
+.media .minorWrapper img,
+.blockResultWrapper .minorWrapper img{
+    height: 95px;
+    padding: 0px 5px 5px 0px;
+    display: inline-block;
+    width: 95px;
+}
+
+.blockText .media > img, .blockResultWrapper .media img{
+    max-width: 25%;
+}
+
+.pageFilterWrapper{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.pageFilterWrapper .pageFilter{
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.pageFilterWrapper .pageFilter.selected,
+.pageFilterWrapper .pageFilter:hover{
+    text-decoration: underline;
+    
+}
